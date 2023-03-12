@@ -7,7 +7,6 @@
 
 可供為未來選股之參考依據。
 
-
 ## Technical Stack
 - Python
 - jieba

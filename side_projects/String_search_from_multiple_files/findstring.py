@@ -31,9 +31,8 @@ def getfiles(path):
 getfiles(path)
 
 
-#error: UnicodeDecodeError >> f = open(file_name, 'rt', encoding='utf-8',errors='ignore') //https://ithelp.ithome.com.tw/articles/10194277 , https://stackoverflow.com/questions/42339876/error-unicodedecodeerror-utf-8-codec-cant-decode-byte-0xff-in-position-0-in
+#error: UnicodeDecodeError >> f = open(file_name, 'rt', encoding='utf-8',errors='ignore')
 #FileNotFoundError >> 貼上完整的路徑
-#os.相關模組之用法 //https://www.runoob.com/python/python-os-path.html , https://blog.gtwang.org/programming/python-list-all-files-in-directory/
 # not found 之情境? OK
 #Q: 找出所有有出現 text 之文件
 
