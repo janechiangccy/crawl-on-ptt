@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW"  >
+    <head>
+        <meta charset="UTF-8" />
+        <mata name="author" content="Jane Chiang" />
+        <meta name="keyword" content="Jane Chiang, Jane, online store" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <!--title-->
+        <title>Jane Chiang's Blog</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="homepage.css"/>
+        <!--fav-icon-----------------????????----------------->
+        <!-- <link rel="shortcut icon" href="image/location-sign.svg"/> -->
+        <!--poppins-->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> -->
+        <script type="text/javascript">
+            function toggleMenu(number) {
+                var menu=document.getElementById('menu-'+number);
+                menu.classList.toggle('hide'); //切換標籤物件 class 的 hide 設定
+            }
+        </script>    
+    
+    </head>
+    <body onload="init();">
+        <nav class="guide">
+            <a class="logo" href="http://localhost:5500/side_projects/personal_website/store/homepage.html" > <b>Sawadee</b> </a>
+            <a class="aboutus" href="http://localhost:5500/side_projects/personal_website/store/aboutus.html" > About Us</a>
+            <a class="menu" href="http://localhost:5500/side_projects/personal_website/store/menu.html"> Menu</a>
+            <a class="contactus" href="http://localhost:5500/side_projects/personal_website/store/contactus.html"> Contact Us</a>
+            <!-- <div class="logo" onclick="getLink(homepage.html);"> <b>Sawadee</b> </div>
+            <div class="aboutus" onclick="getLink(aboutus.html);">About Us</div>
+            <div class="menu" onclick="getLink(menu.html);">Menu</div>
+            <div class="contactus" onclick="getLink(contactus.html);">Contact Us</div> -->
+        </nav>
+        <div class="shop_addr">
+            <div onclick="toggleMenu(1);">台北門市</div>
+                <img class="hide" id='menu-1' src="./to-be-continued-png-47217.png"/>
+            <div onclick="toggleMenu(2);">台中門市</div>
+                <img class="hide" id='menu-2' src="./to-be-continued-png-47217.png"/>
+            <div onclick="toggleMenu(3);">台南門市</div>
+                <img class="hide" id='menu-3' src="./to-be-continued-png-47217.png"/>
+        </div>
+       
+    </body>
+</html>

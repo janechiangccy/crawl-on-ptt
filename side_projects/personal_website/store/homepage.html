@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW"  >
+    <head>
+        <meta charset="UTF-8" />
+        <mata name="author" content="Jane Chiang" />
+        <meta name="keyword" content="Jane Chiang, Jane, online store" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <!--title-->
+        <title>Jane Chiang's Blog</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="homepage.css"/>
+        <!--fav-icon-----------------????????----------------->
+        <!-- <link rel="shortcut icon" href="image/location-sign.svg"/> -->
+        <!--poppins-->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> -->
+        <script type="text/javascript">
+            function init() {
+                
+                function getLink(link) {
+                    //XMLHttpRequest 物件專門用來和伺服器做連線
+                    var req=new XMLHttpRequest();
+                    req.open('get', 'http://localhost:5500/side_projects/personal_website/store/'+link);
+                    req.onload=function() { //load 事件，偵測連線的狀態結束
+                        //連線完成
+                        var content=document.getElementById('content');
+                        content.innerHTML=this.responsText;
+                    }
+                    req.send(); //送出連線
+                }
+            }
+        </script>
+    
+    </head>
+    <body onload="init();">
+        <nav class="guide">
+            <a class="logo" href="http://localhost:5500/side_projects/personal_website/store/homepage.html" > <b>Sawadee</b> </a>
+            <a class="aboutus" href="http://localhost:5500/side_projects/personal_website/store/aboutus.html" > About Us</a>
+            <a class="menu" href="http://localhost:5500/side_projects/personal_website/store/menu.html"> Menu</a>
+            <a class="contactus" href="http://localhost:5500/side_projects/personal_website/store/contactus.html"> Contact Us</a>
+            <!-- <div class="logo" onclick="getLink(homepage.html);"> <b>Sawadee</b> </div>
+            <div class="aboutus" onclick="getLink(aboutus.html);">About Us</div>
+            <div class="menu" onclick="getLink(menu.html);">Menu</div>
+            <div class="contactus" onclick="getLink(contactus.html);">Contact Us</div> -->
+        </nav>
+        <main>
+            <h2>Latest News</h2>
+            <div class="item_homep">
+                <h3>慶開幕</h3>
+                <p >
+                    慶開幕勢必能夠左右未來。
+                    <br>
+                    慶開幕的存在，令我無法停止對他的思考。
+                    <br>
+                </p>
+            </div>
+            <div class="item_homep">
+                <h3>消費滿千折百活動開跑囉～</h3>
+                <p >
+                    我們要從本質思考，從根本解決問題。
+                    <br>
+                    紀伯倫講過一段耐人尋思的話，一個人的意義不在於他的成就，而在於他所企求成就的東西。
+                    <br>
+                    這激勵了我。
+                    <br>
+                    對於一般人來說，消費滿千折百活動究竟象徵著什麼呢？
+                    <br>
+                </p>
+            </div>
+        </main>
+    </body>
+</html>

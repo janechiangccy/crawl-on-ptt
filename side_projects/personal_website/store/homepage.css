@@ -1,0 +1,127 @@
+body {
+    background-color:#BCB8B1;
+}
+
+/* nav 樣式設定*/
+nav {
+    display:flex;
+    border:5px solid#F4F3EE;
+    margin-bottom: 24px;
+    
+    
+    
+
+}
+nav>.logo {
+    text-decoration:none;
+    /* flex:none 沒有彈性、固定尺寸*/
+    flex:5; height: 45px;padding:10px;
+    color:#463F3A;
+    background-color:#BCB8B1;
+    font-size:xx-large;
+
+
+}
+nav>.aboutus {
+    text-decoration:none;
+    flex:2;padding:20px;
+    /* flex:auto 盡量把容器的空間張滿*/
+    color:#463F3A;
+    background-color:#BCB8B1;
+    font-size:large;
+}
+nav>.menu {
+    
+    text-decoration:none;
+    flex:2;padding:20px;
+    /* flex:auto 盡量把容器的空間張滿*/
+    color:#463F3A;
+    background-color:#BCB8B1;
+    font-size:large;
+}
+nav>.contactus {
+    text-decoration:none;
+    flex:2;padding:20px;
+    color:#463F3A;
+    background-color:#BCB8B1;
+    font-size:large;
+}
+
+.guide a:hover {
+    background-color:#F4F3EE ;
+}
+
+/* homepage */
+main {/* 容器 */
+    display:flex;
+    /*有 flex-wrap:wrap; 才會換行*/
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:center; /* 水平對齊:center, 靠左對齊:flex-start, 靠右:flex-end*/
+    /*stretch: 有一個box變長,其他跟著變長; center: 有一個box變高,其他不變,但三個box會置中垂直對齊; flex-start: 同center, 但3個box靠上對齊*/
+    align-items:flex-start; 
+
+}
+h2 {
+    color:#463F3A;
+    margin-left:180px;padding:10px;
+}
+h3{
+    color:#463F3A;
+    border-bottom: 3px solid #F4F3EE;
+}
+.item_homep {
+    color:#463F3A;
+    margin-left:220px;padding:10px;
+}
+.item_homep:hover {
+    background-color:#F4F3EE ;
+}
+
+/* about us */
+img {
+    float:left;
+    width:600px;
+}
+.aboutus_text {
+    color:#463F3A;
+    font-size: large;
+    line-height: 35px;
+    padding:25px;
+}
+/* menu */
+.hide{display:none;}
+
+.shop_addr {
+    color:#463F3A;
+    font-size:larger;
+    padding-top:40px;margin-left:100px;
+    text-decoration: underline #463F3A ;
+}
+
+/* contact us */
+h4 {
+    color:#463F3A;
+    font-size:x-large;
+    margin-left:440px; margin-bottom: 24px;
+    
+}
+.text_cu {
+    color:#463F3A;
+    margin-left:440px; padding-bottom: 12px;
+}
+main>.item_cu {
+    width:220px; height: 40px;
+    padding-left:20px;margin-left:440px;margin-bottom: 24px;
+}
+
+main>.text_cu {
+    
+    width:440px; height: 300px;
+    padding-left:20px;margin-left:440px;margin-bottom: 24px;
+}
+#btn {
+    margin-left:440px;margin-bottom: 24px;
+}
+
+

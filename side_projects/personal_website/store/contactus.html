@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW"  >
+    <head>
+        <meta charset="UTF-8" />
+        <mata name="author" content="Jane Chiang" />
+        <meta name="keyword" content="Jane Chiang, Jane, online store" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <!--title-->
+        <title>Jane Chiang's Blog</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="homepage.css"/>
+        <script type="text/javascript">
+            function init() {
+                var btn=document.getElementById('btn');
+                var handler=function(e) { //準備一個事件處理器 (對應事件的函式)
+                    alert('已送出回覆!'); //搜尋滑鼠座標
+               };
+               btn.addEventListener('click' /* 事件的名稱 */, handler)
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <nav class="guide">
+            <a class="logo" href="http://localhost:5500/side_projects/personal_website/store/homepage.html" > <b>Sawadee</b> </a>
+            <a class="aboutus" href="http://localhost:5500/side_projects/personal_website/store/aboutus.html" > About Us</a>
+            <a class="menu" href="http://localhost:5500/side_projects/personal_website/store/menu.html"> Menu</a>
+            <a class="contactus" href="http://localhost:5500/side_projects/personal_website/store/contactus.html"> Contact Us</a>
+            <!-- <div class="logo" onclick="getLink(homepage.html);"> <b>Sawadee</b> </div>
+            <div class="aboutus" onclick="getLink(aboutus.html);">About Us</div>
+            <div class="menu" onclick="getLink(menu.html);">Menu</div>
+            <div class="contactus" onclick="getLink(contactus.html);">Contact Us</div> -->
+        </nav>
+        <main>
+            <div class="text-left">
+                <h4>聯絡我們</h4>
+                <p class="text_cu">
+                    我們將盡力解決您的問題
+                    <br>
+                    客服上班時間為09:00~17:00
+                    <br>
+                    若有問題，請於上班時間聯繫
+                    <br>
+                    若於下班時間提出問題，我們將於上班時間回覆
+                    <br>
+                </p>
+            </div>
+            
+            <input type="text" class="item_cu" placeholder="請輸入姓名" />
+            <input type="text" class="item_cu" placeholder="請輸入手機號碼或電子信箱" />
+            <textarea class="text_cu" placeholder="請留下您的意見..."></textarea>
+            <div>
+                <button id="btn">Click</button>
+                <!-- <span onclick="alert('clicked');">Test</span> -->
+
+            </div>
+            
+        </main>
+        
+    </body>
+</html>
