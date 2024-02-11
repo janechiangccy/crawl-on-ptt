@@ -1,76 +1,186 @@
 /*--blog--*/
-h1{
-    
-    font-weight:bold;
+/* nav 樣式設定*/
+nav {
     display: flex;
-    justify-content:center;
+    margin-bottom: 24px;
+
+
+
+
+}
+
+nav>.aboutme {
+    text-decoration: none;
+    /* flex:none 沒有彈性、固定尺寸*/
+    flex: 40;
+    height: 45px;
+    padding: 10px;
+    color: white;
+    font-size: xx-large;
+
+
+}
+
+nav>.github {
+    text-decoration: none;
+    flex: 1.5;
+    padding: 20px;
+    /* flex:auto 盡量把容器的空間張滿*/
+    color: white;
+    font-size: large;
+}
+
+nav>.medium {
+
+    text-decoration: none;
+    flex: 1.5;
+    padding: 20px;
+    /* flex:auto 盡量把容器的空間張滿*/
+    color: white;
+    font-size: large;
+}
+
+nav>.facebook {
+    text-decoration: none;
+    flex: 1.5;
+    padding: 20px;
+    color: white;
+    font-size: large;
+}
+
+.guide a:hover {
+    background-color: rgba(175, 176, 177, 0.192);
+}
+
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 2.8rem;
-    
-}
-.aboutme{
-display: flex;
-/*justify-content: center;
-align-items: center;*/
-flex-direction: column;
-}
-h2{
-    font-size: 2.4rem;
-    font-weight: 600px;
-}
-h2:hover{
-    color: rgb(187, 64, 127);
-    transition: all see 0.3s;
-}
-.Project ul{
-    padding: 20px;
-    font-size: 0.9rem;
+
 }
 
-.container {
-    width:1280px;
-    padding:10px;
-    display: flex;
-    margin-left:auto; /* margin-left:auto 把.container內的body設定在中間*/
-    margin-right:auto; 
-}
 .aboutme {
-    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.Project {
-    flex:2;
+
+.opinion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.8rem;
+    /*border寬度*/
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #92DCE5;
+    /*邊界的陰影區*/
+    box-shadow: 10px 10px #7C7C7C;
+    /*文字與邊界的距離*/
+    padding: 1px 1px 1px 5px;
 }
 
 h3 {
-    margin-top:5px;
+    font-size: 1.6rem;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #92DCE5;
+    box-shadow: 10px 10px #7C7C7C;
+    padding: 1px 1px 1px 5px;
 }
-.box {
-    border-bottom:1px solid rgb(202, 201, 201);
+
+/* h2:hover {
+    color: rgb(187, 64, 127);
+    transition: all see 0.3s;
+} */
+
+
+.container {
+    width: 1280px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    /* margin-left:auto 把.container內的body設定在中間*/
+    margin-right: auto;
 }
-.box:hover{
-    background-color:rgba(175, 176, 177, 0.192);
+
+.childCtner {
+    flex: 2;
 }
+
+.container2 {
+    width: 1280px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    /* margin-left:auto 把.container內的body設定在中間*/
+    margin-right: auto;
+}
+
+
+
+h3 {
+    margin-top: 5px;
+}
+
+.opinion:hover {
+    background-color: rgba(175, 176, 177, 0.192);
+}
+
+.aboutme:hover {
+    background-color: rgba(175, 176, 177, 0.192);
+}
+
+.childCtner:hover {
+    background-color: rgba(175, 176, 177, 0.192);
+}
+
 ul li {
-    color:#BFBFBF;
+    color: #BFBFBF;
     font-size: 18px;
 }
+
 ol li {
-    color:#BFBFBF;
+    color: #BFBFBF;
     font-size: 18px;
 }
+
 p {
-    color:#BFBFBF;
+    color: #BFBFBF;
     font-size: 18px;
 }
+
 /*若使用者使用手機時，由下方的@media顯示方式*/
 @media screen and (max-width:500px) {
-    h1 {font-size:xx-large}
-    h2 {font-size:x-large}
+    h1 {
+        font-size: xx-large
+    }
+
+    h2 {
+        font-size: x-large
+    }
+
     .container {
-        width:100%;
+        width: 100%;
         flex-direction: column;
     }
 }
