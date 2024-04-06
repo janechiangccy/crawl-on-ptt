@@ -1,54 +1,7 @@
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li .home {
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-li .desktop-menu {
-    float: right;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    padding-right: 40px;
-    font-size: 20px;
-} */
-
-/* .home {
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-}
-
-.desktop-menu {
-    text-align: center;
-    display: block;
-    float: right;
-    font-size: 20px;
-}
-
-.mobile-menu {
-    text-align: center;
-    display: none;
-} */
-
 #navbar {
     overflow: hidden;
     display: flex;
-    /* 將 navbar 設置為 flexbox 佈局 */
     justify-content: space-between;
-    /* 讓 home 和 icon 兩側分佈 */
-
 }
 
 .nav-right {
@@ -79,20 +32,6 @@ li a {
     display: none;
 }
 
-/* #toggle {
-    display: none;
-}
-
-#sidebar ul {
-    display: none;
-} */
-
-/* .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-} */
-
 /* center text */
 .CenterText {
     font-size: 40px;
@@ -118,7 +57,6 @@ li a {
     grid-template-columns: 366.66px 386.66px 386.66px;
     grid-template-rows: 50px;
     align-items: center;
-    /* 垂直置中 */
 
 }
 
@@ -128,7 +66,6 @@ li a {
     position: relative;
     justify-content: center;
     align-items: center;
-    /* 垂直置中 */
 
 
 }
@@ -167,12 +104,9 @@ li a {
 .bigbox {
     display: grid;
     gap: 20px;
-    /* 圖片之間的間距 */
     max-width: 1180px;
-    /* 最大寬度為1200px */
     margin: 0px auto;
     padding: 10px;
-    /* 水平置中 */
     overflow: hidden;
     grid-template-columns: 2fr repeat(4, 1fr);
     grid-template-rows: 300px 300px;
@@ -182,7 +116,6 @@ li a {
 .item_bottom1,
 .item_bottom2 {
     position: relative;
-    /* 將容器設置為相對定位 */
     overflow: hidden;
 }
 
@@ -191,9 +124,7 @@ li a {
 .item_bottom2 img {
     width: 100%;
     height: 100%;
-    /* 將圖片的最大寬度設定為其父元素的寬度 */
     display: block;
-    /* 以塊級元素顯示 */
     height: 300px;
     object-fit: cover;
 }
@@ -265,78 +196,6 @@ li a {
         display: none;
     }
 
-    /* #toggle {
-        position: fixed;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        background: lightskyblue;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #toggle::before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background: white;
-        transform: translateY(-5px);
-        transition: 0.2s;
-    }
-
-    #toggle::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background: white;
-        transform: translateY(5px);
-        transition: 0.2s;
-    }
-
-    #toggle.active::before {
-        transform: translateY(0px) rotate(45deg);
-
-    }
-
-    #toggle.active::after {
-        transform: translateY(0px) rotate(-45deg);
-
-    }
-
-    #sidebar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 40%;
-        height: 100vh;
-        background: lightpink;
-        opacity: 0.7;
-        transition: 0.5s;
-    }
-
-    #sidebar.active {
-        right: 0px;
-    }
-
-    #sidebar ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sidebar ul li {
-        list-style-type: none;
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        font-size: 20px;
-    } */
-
     .burger-icon {
         display: block;
         float: right;
@@ -352,8 +211,6 @@ li a {
 
     #mobile-menu {
         display: none;
-        /* flex-direction: column;
-        align-items: center; */
         position: fixed;
         top: 0;
         right: 0;
@@ -385,7 +242,7 @@ li a {
     }
 
     .smallbox img {
-        object-fit: none;
+        object-fit: contain;
     }
 
     .bigbox {
@@ -393,6 +250,7 @@ li a {
         grid-row-gap: 20px;
         justify-content: center;
     }
+
 
     .icon img {
         object-fit: contain;
