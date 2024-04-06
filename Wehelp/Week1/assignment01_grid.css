@@ -222,9 +222,11 @@ li a {
 
 @media (min-width:600px) and (max-width:1200px) {
     .smallbox {
-        grid-template-columns: 45% 45%;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
         grid-row-gap: 20px;
         grid-template-rows: 50px;
+        width: 90%;
         margin: auto;
     }
 
@@ -234,7 +236,9 @@ li a {
     }
 
     .bigbox {
-        grid-template-columns: repeat(4, 22.25%);
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
         grid-template-rows: 300px 300px;
     }
 
@@ -377,6 +381,7 @@ li a {
     .smallbox {
         grid-template-columns: 90%;
         grid-row-gap: 20px;
+        justify-content: center;
     }
 
     .smallbox img {
@@ -386,10 +391,7 @@ li a {
     .bigbox {
         grid-template-columns: 90%;
         grid-row-gap: 20px;
-    }
-
-    .bigbox img {
-        /* object-fit: none; */
+        justify-content: center;
     }
 
     .icon img {
