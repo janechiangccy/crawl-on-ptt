@@ -23,7 +23,7 @@ li a {
     font-size: 20px;
 } */
 
-.home {
+/* .home {
     float: left;
     font-size: 20px;
     font-weight: bold;
@@ -40,7 +40,53 @@ li a {
 .mobile-menu {
     text-align: center;
     display: none;
+} */
+
+#navbar {
+    overflow: hidden;
+
+    display: flex;
+    /* 將 navbar 設置為 flexbox 佈局 */
+    justify-content: space-between;
+    /* 讓 home 和 icon 兩側分佈 */
+
 }
+
+.home,
+.item_top {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.home {
+    font-weight: bold;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile_item,
+.close-icon {
+    display: none;
+}
+
+/* #toggle {
+    display: none;
+}
+
+#sidebar ul {
+    display: none;
+} */
+
+/* .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+} */
 
 /* center text */
 .CenterText {
@@ -51,8 +97,9 @@ li a {
     text-align: center;
     padding-top: 105px;
     padding-bottom: 105px;
-    margin: 10px;
+    margin-bottom: 10px;
     background-color: blanchedalmond;
+    text-wrap: nowrap;
 }
 
 /* small box*/
@@ -149,7 +196,7 @@ li a {
     display: block;
     height: 40px;
     width: 40px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 0;
     right: 0;
@@ -183,13 +230,123 @@ li a {
 
 
 @media (min-width:360px) and (max-width:600px) {
-    .desktop-menu {
+    .home {
+        display: block;
+        float: left;
+    }
+
+    .item_top {
         display: none;
     }
 
-    .mobile-menu {
+    /* #toggle {
+        position: fixed;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: lightskyblue;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggle::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: white;
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+
+    #toggle::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: white;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+
+    #toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+
+    }
+
+    #toggle.active::after {
+        transform: translateY(0px) rotate(-45deg);
+
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        background: lightpink;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    #sidebar.active {
+        right: 0px;
+    }
+
+    #sidebar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar ul li {
+        list-style-type: none;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+    } */
+
+    .burger-icon {
         display: block;
         float: right;
+        padding: 10px;
+    }
+
+    .close-icon {
+        position: fixed;
+        right: 20px;
+    }
+
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: darkolivegreen;
+        opacity: 0.5;
+
+    }
+
+    #mobile-menu.show {
+        display: block;
+        /* 顯示側邊欄 */
+    }
+
+    #mobile-menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
     }
 
     .smallbox {

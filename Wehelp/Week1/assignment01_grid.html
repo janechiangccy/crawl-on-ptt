@@ -23,11 +23,44 @@
         <li><a class="desktop-menu">Item 2</a></li>
         <li><a class="desktop-menu">Item 1</a></li>
     </ul> -->
-    <div class="home">My Website</div>
-    <div class="desktop-menu"> item 1 item item 3 item4</div>
-    <div class="mobile-menu">
-        <img src="https://cdn1.iconfinder.com/data/icons/ui-22/24/502-512.png" width="50px" height="50px">
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="#" class="home">My Website</a>
+        </div>
+        <div class="nav-right">
+            <a class="item_top">Item 1</a>
+            <a class="item_top">Item 2</a>
+            <a class="item_top">Item 3</a>
+            <a class="item_top">Item 4</a>
+            <img src="https://cdn1.iconfinder.com/data/icons/ui-22/24/502-512.png" alt="Menu" id="burger-icon" class="burger-icon" height="30px" width="30px">
+            <!-- <a id="toggle"></a>             -->
+        </div>
+        <!-- <div id="sidebar">
+            <ul>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+                <li><a>Item 4</a></li>
+            </ul>
+        </div> -->
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+        <a class="mobile_item">Item 1</a>
+        <a class="mobile_item">Item 2</a>
+        <a class="mobile_item">Item 3</a>
+        <a class="mobile_item">Item 4</a>
+        <a id="close-icon" class="close-icon">X</a>
     </div>
+    <!-- <script>
+        const toggle = document.getEementByID('toggle');
+        const sidebar = document.getEementByID('sidebar');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script> -->
+    <script src="assignment01_grid.js"></script>
+    
     <div class="CenterText">
         <p> Welcome to MyHome</p>
     </div>
