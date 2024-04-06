@@ -1,0 +1,212 @@
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li .home {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+li .desktop-menu {
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding-right: 40px;
+    font-size: 20px;
+} */
+
+.home {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.desktop-menu {
+    text-align: center;
+    display: block;
+    float: right;
+    font-size: 20px;
+}
+
+.mobile-menu {
+    text-align: center;
+    display: none;
+}
+
+/* center text */
+.CenterText {
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+
+/* small box*/
+.smallbox {
+    display: grid;
+    max-width: 1180px;
+    padding: 10px;
+    margin: 0px auto;
+    grid-column-gap: 20px;
+    overflow: hidden;
+    grid-template-columns: 366.66px 386.66px 386.66px;
+    grid-template-rows: 50px;
+    align-items: center;
+    /* 垂直置中 */
+
+}
+
+.box0 {
+    height: 50px;
+    position: relative;
+    /* 將 .grid-item 設置為相對定位 */
+    justify-content: center;
+    align-items: center;
+    /* 垂直置中 */
+
+
+}
+
+.box0 img {
+    z-index: 10;
+    position: relative;
+
+}
+
+
+.box1 {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 1000px;
+    max-width: 100%;
+    background-color: rgba(154, 14, 14, 0.3);
+    /* 背景色 */
+    z-index: -1;
+    /*!!!*/
+
+
+}
+
+.box1 span {
+    position: relative;
+    left: 90px;
+    top: 10px;
+    z-index: 1;
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+}
+
+
+
+/* big box*/
+.bigbox {
+    display: grid;
+    gap: 20px;
+    /* 圖片之間的間距 */
+    max-width: 1180px;
+    /* 最大寬度為1200px */
+    margin: 0px auto;
+    padding: 10px;
+    /* 水平置中 */
+    overflow: hidden;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-rows: 300px 300px;
+}
+
+.item {
+    position: relative;
+    /* 將容器設置為相對定位 */
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    /* 將圖片的最大寬度設定為其父元素的寬度 */
+    display: block;
+    /* 以塊級元素顯示 */
+    height: 300px;
+    object-fit: cover;
+}
+
+.icon img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(154, 14, 14, 0.3);
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (min-width:600px) and (max-width:1200px) {
+    .smallbox {
+        grid-template-columns: 45% 45%;
+        grid-row-gap: 20px;
+        grid-template-rows: 50px;
+    }
+
+    .bigbox {
+        grid-template-columns: repeat(4, 22.25%);
+        grid-template-rows: 300px 300px;
+    }
+
+}
+
+
+@media (min-width:360px) and (max-width:600px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        float: right;
+    }
+
+    .smallbox {
+        grid-template-columns: 90%;
+        grid-row-gap: 20px;
+    }
+
+    .smallbox img {
+        object-fit: contain;
+    }
+
+    .bigbox {
+        grid-template-columns: 90%;
+        grid-row-gap: 20px;
+    }
+
+    .bigbox img {
+        object-fit: contain;
+    }
+}
