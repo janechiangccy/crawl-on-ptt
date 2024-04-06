@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 #navbar {
     overflow: hidden;
     display: flex;
@@ -43,8 +47,13 @@
     padding-bottom: 105px;
     margin-bottom: 10px;
     background-color: blanchedalmond;
-    text-wrap: nowrap;
+    display: flex;
 }
+
+#welcome {
+    width: 90%;
+}
+
 
 /* small box*/
 .smallbox {
@@ -242,7 +251,7 @@
     }
 
     .smallbox img {
-        object-fit: contain;
+        object-fit: initial;
     }
 
     .bigbox {
