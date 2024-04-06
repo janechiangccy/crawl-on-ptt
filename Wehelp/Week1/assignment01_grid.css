@@ -120,7 +120,6 @@ li a {
 .box0 {
     height: 50px;
     position: relative;
-    /* 將 .grid-item 設置為相對定位 */
     justify-content: center;
     align-items: center;
     /* 垂直置中 */
@@ -176,13 +175,17 @@ li a {
     grid-template-rows: 300px 300px;
 }
 
-.item {
+.item,
+.item_bottom1,
+.item_bottom2 {
     position: relative;
     /* 將容器設置為相對定位 */
     overflow: hidden;
 }
 
-.item img {
+.item img,
+.item_bottom1 img,
+.item_bottom2 img {
     width: 100%;
     height: 100%;
     /* 將圖片的最大寬度設定為其父元素的寬度 */
@@ -224,6 +227,16 @@ li a {
     .bigbox {
         grid-template-columns: repeat(4, 22.25%);
         grid-template-rows: 300px 300px;
+    }
+
+    .item_bottom1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .item_bottom2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
     }
 
 }
